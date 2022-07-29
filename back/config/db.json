@@ -1,0 +1,9 @@
+{
+    "connection":{
+        "user": "postgres",
+        "host": "localhost",
+        "database": "dbMessanger",
+        "password": "123456",
+        "port": 5432
+    }
+}

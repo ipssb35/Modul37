@@ -1,0 +1,10 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "server": "npm start --prefix back",
+    "client": "npm start --prefix front"
+  },
+  "dependencies": {}
+}

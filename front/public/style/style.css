@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.FormContent > div{
+    display: flex;
+    flex-direction: column;
+}
+.ModalIconForms  form > *.FormContent {
+    padding-top: 20px;
+}
+.inputContainer.gender > label{
+    text-align: center;
+}
+.inputContainer.gender > label{
+    margin-right: 25px;
+    cursor: pointer;
+    
+}
+.inputContainer.gender > label > input{
+    margin-right: 5px;
+    width: 17px;
+    /* background-color: lime; */
+    height: 17px;
+    /* outline-offset: 0; */
+}
+.inputContainer > label,
+.FormContent > div > span{
+    /* align-self: center; */
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    /* color: white; */
+}
+.ModalIconForms  form span.SignUpError,
+.SignUpError{
+    text-transform: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    color:red;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+.ModalIconForms  form > .FormContent{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ModalIconForms > div{
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 1px 1px 10px white;
+    position: relative;
+}
+.ModalIconForms > div.Loading{
+    box-shadow: none;
+    border: 1px solid white;
+}
+.ModalIconForms  form span{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    letter-spacing: .15em;
+    font-weight: 500;
+    /* width: 120px; */
+}
+
+.ModalIconForms > form  input:focus{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.password_container{
+    position: relative;
+}
+.password_container > .SignUpError{
+    margin-top: 10px;
+}
+
+.inputContainer{
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.inputContainer > input[type='submit']:hover{
+    color: black;
+}
+.inputContainer > input[type='submit']{
+    width: 40%;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0;
+    /* background-color: transparent; */
+    cursor: pointer;
+}
+
+.inputContainer:before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0; 
+    margin-left: 10px;
+    align-self: center;
+    z-index: 200;
+    background-size: 100% 100%; 
+    opacity: 0.8;
+}
+.inputContainer.none > input{
+    padding-left: 30px;
+}
+.inputContainer.none:before{
+    margin-left: 0;
+}
+.inputContainer.username:before{
+    background-image: url('../img/user.png');
+}
+
+.inputContainer.password:before{
+    background-image: url('../img/password.png');
+}
+
+.inputContainer.email:before{
+    background-image: url('../img/email.png');
+}
+
+.inputContainer > input{
+    border: none; 
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    /* color: white; */
+    font-size: 18px;
+    border-radius: 10px;
+    padding-left: 45px;
+    width:100%;
+    position: relative;
+}
+.FormHeader h2.OpenForm:after,
+.FormHeader h2:hover:after{
+    width: 100%;
+    opacity: 1;
+    align-self: center;
+}
+.FormHeader  h2:after{
+    content: '';
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 0;
+    opacity: 0;
+    align-self: center;
+    justify-self: center;
+    transition: .33s;
+}
+
+.FormHeader  h2{
+    /* color: white; */
+    letter-spacing: 1px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.FormHeader{
+    margin-top: 30px;
+    /* height: 10px; */
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+.ModalIconForms{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 2000;
+    background-color: rgb(0, 0, 0,0.4);
+}
+.ModalIconForms > div{
+    z-index: 200;
+}
+.ModalIconForms  form > .row,
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+body > #root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.ul_links > li{
+    transition: .33s;
+}
+.SectionNavigation-Item{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    transition: .33s;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.SectionNavigation-Item:hover{
+    border-bottom: 3px solid #00d4ff;
+}
+header{
+    width: 100%;
+    /* height: 40px; */
+    /* position: fixed; */
+    border-bottom: 1px solid #e8e8e8;
+    /* background-color: black; */
+    /* box-shadow: 1px 0px 10px black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+.ul_links > li span{
+    color: #0088cc;
+    transition: .33s;
+}
+.ul_links > li{
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* padding: 10px;
+    padding-right: 0px;
+    padding-left: 0px; */
+    background: white;
+    /* border-bottom: 3px solid white; */
+    /* background-color: lime; */
+    /* border-radius: 25px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 10px; */
+
+
+}
+
+.logo{
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    height: 40px;
+}
+.SectionNavigation-Item,
+.Section-Title.register{
+    height: 100%;
+}
+.hover_separator:after{
+    content: '';
+    width: 2px;
+    height: 75%;
+    background-color: rgb(63, 63, 63);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+  /* close button */
+
+  .CloseForms{
+      position: absolute;
+      right: 0;
+      top:0;
+      cursor: pointer;
+  }
+
+  .bar1, .bar2 {
+    width: 36px;
+    height: 5px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+.bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.bar2 {
+    transform: rotate(45deg) translate(-2px, 2px);
+}  
+
+.user_avatar{
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.user_settings{
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.user_settings > img,
+.user_avatar > img{
+    width: 100%;
+    height: 100%;
+}
+.UserProfile{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-self: center;
+    justify-self: center; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.UserName{
+    justify-content: center;
+    align-items: center;
+}
+
+.UserName > span{
+    color: black;
+}
+.ul_links > li .UserName span:hover{
+    color: #0088cc;
+}
+.UsersContainer span,
+.ul_links > li .UserName span{
+    color: black;
+    transition: .33s;
+    letter-spacing: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.links-auth > a.yandex{
+    
+    background-image: url('../img/yandex_icon.png');
+}
+.links-auth > a:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.links-auth > a{
+    margin: 10px;
+    margin-top: 0;
+    width: 55px;
+    height: 55px;
+    background-size: 100%;
+    transition: .33s;
+    box-shadow: 0px 0px 5px black;
+}
+.links-auth{
+
+}
+.ModalIconForms form .UsersContainer span{
+    font-weight: normal;
+    letter-spacing: normal;
+    font-size: 18px;
+    margin-left: 10px;
+}

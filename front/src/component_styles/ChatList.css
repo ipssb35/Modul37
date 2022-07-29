@@ -1,0 +1,397 @@
+.NavChatList{
+    width: 350px;
+    height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.NavChatList *{
+    color: rgb(237, 210, 210);
+}
+.ChatList{
+    align-items: center;
+}
+.ChatList span{
+    font-size: 19px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+.ChatList > img{
+    margin-right: 25px;
+}
+
+.TextInputForChat{
+    padding: 10px;
+    width: 100%;
+    height: 67px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.inputText{
+    width: 100%;
+    min-height: 100%;
+    max-height: 200px;
+    border: none;
+    outline: none;
+}
+.AddFile{
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    margin-right: 15px;
+    opacity: 0.8;
+    cursor: pointer;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m20.0291094%2015.0279907-5.384726%205.2303888c-2.5877049%202.513536-6.71408829%202.4838066-9.26530792-.0667538-2.6116233-2.6109485-2.61217034-6.8446794-.00122186-9.4563027.00760974-.0076117.01523784-.015205.02288425-.0227799l8.06657363-7.99110563c1.7601202-1.7436532%204.6004898-1.73030402%206.344143.02981623.0091252.00921136.0182104.01846224.0272554.02775238%201.7500823%201.79751906%201.7306631%204.66777042-.0435807%206.44144506l-8.1308667%208.12825806c-.8479169.8476448-2.20023168.9147308-3.12787932.1551687l-.1337127-.1094846c-.8947528-.7326277-1.02618115-2.0518803-.29355343-2.9466331.03855837-.047091.0791516-.0924786.12166404-.1360332l5.46733261-5.60136864%22%20stroke%3D%22%23828a99%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+
+.Profile{
+    min-height: calc(100vh - 47px);
+}
+.SearchUsers {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.SendBtn{
+    opacity: 0.7;
+    /* background-color: rgb(97, 133, 240); */
+    padding: 4px;
+    color: rgb(241, 241, 96);
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m4.7%2015.8c-.7%201.9-1.1%203.2-1.3%203.9-.6%202.4-1%202.9%201.1%201.8s12-6.7%2014.3-7.9c2.9-1.6%202.9-1.5-.2-3.2-2.3-1.4-12.2-6.8-14-7.9s-1.7-.6-1.2%201.8c.2.8.6%202.1%201.3%203.9.5%201.3%201.6%202.3%203%202.5l5.8%201.1c.1%200%20.1.1.1.1s0%20.1-.1.1l-5.8%201.1c-1.3.4-2.5%201.3-3%202.7z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    outline: none;
+    border: none;
+}
+.Messange_container{
+    width: 100%;
+    height: calc(100vh - 70px - 119px);
+    border: 1px solid rgb(0, 0, 0,0.1);
+    background-color: rgb(248, 244, 244);
+    padding: 20px;
+    overflow-y: scroll;
+}
+.MessageContent{
+    max-width: 100%;
+    background-color: rgb(0, 0, 0,0.1);
+    padding: 15px;
+    color: black;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.IsAuthor .MessageContent{
+    border-top-left-radius: 25px;
+    color: white;
+    border-top-right-radius: 0px;
+    background-color: rgb(160, 109, 16);
+    text-align: right;
+}
+
+.MessageHeader > span{
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0, 0, 0,0.3);
+    margin-right: 10px;
+}
+.IsAuthor .MessageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.IsAuthor.row,
+.IsAuthor .row{
+    flex-direction: row-reverse;
+}
+.MessageContainer{
+    /* width: 100%; */
+}
+.MessageHeader{
+    width: 100%;
+    /* padding-right: 25px; */
+    padding-left: 5px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.MessageBlock > .UserIcon{
+    margin-right: 20px;
+}
+.IsAuthor.MessageBlock{
+    max-width: 100%;
+}
+.IsAuthor.MessageBlock > .UserIcon{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.MessageBlock{
+    max-width: 50%;
+    margin-top: 25px;
+}
+
+.HeaderChatList{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.NavChatList > .Header{
+    width: 100%;
+    background-color: rgb(97, 133, 240);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header span{
+    font-size: 20px;
+}
+.SearchContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+.SearchContent:before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('../secret_img/search-icon.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+}
+
+.ChatContentList {
+    width: 100%;
+}
+
+.SearchContent > input{
+    border: 1px solid rgb(0, 0, 0,0.3);
+    border-radius: 15px;
+    outline: none;
+    padding: 4px;
+    padding-left: 40px;
+    width: calc(100% - 20px);
+    color: black;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ChatListContainer{
+    border-top: 1px solid rgb(0, 0, 0,0.3);
+    overflow-y: auto;
+    max-height: 79vh;
+    padding-left: 0px;
+}
+.ChatContainer{
+    width: 100%;
+    /* height: 45px; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    /* margin-top: 10px; */
+    margin-bottom: 1px;
+    border-bottom: 1px solid rgb(0, 0, 0,0.1);
+    cursor: pointer;
+    /* background-color: red; */
+    
+}
+
+.ChatListContainer::-webkit-scrollbar-button {
+    background-repeat:no-repeat;
+    width:3px;
+    height:0px
+}
+
+.ChatListContainer::-webkit-scrollbar-track {
+    background-color:#ecedee
+}
+
+.ChatListContainer::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:rgb(97, 133, 240);
+}
+
+.ChatListContainer::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(97, 133, 240);
+}
+
+.ChatListContainer::-webkit-resizer{
+    background-repeat:no-repeat;
+    width:3px;
+    height:0px
+}
+
+.ChatListContainer::-webkit-scrollbar{
+    width: 3px;
+}
+.ChatContainer.select{
+    border-left: 4px solid rgb(97, 133, 240);
+    -webkit-box-shadow: 0px 0px 6px 0px rgb(0, 0, 0,0.1);
+    -moz-box-shadow:    0px 0px 6px 0px rgb(0, 0, 0,0.1);
+    box-shadow:         0px 0px 6px 0px rgb(0, 0, 0,0.1);
+}
+.ChatContainer span{
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+.UserIcon > img{
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+}
+
+.UserIcon:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 3px;
+    bottom: 0px;
+    border: 1px solid white;
+}
+
+.ChatContainer.IsOnline .UserIcon:before{
+    background-color: lime;
+}
+
+.UserIcon{
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+.rightUserBlock{
+    height: 100%;
+    width: calc(100% - 75px);
+    margin-left: 15px;
+}
+
+.UserName_list{
+    font-size: 18px;
+}
+.UserHeader{
+    justify-content: space-between;
+}
+.User_last_message > div{
+    height: 100%;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.User_last_message{
+    width: 100%;
+    height: 50%;
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+    text-overflow: ellipsis;
+}
+
+.Messange_container::-webkit-scrollbar-button {
+    background-repeat:no-repeat;
+    width:0px;
+    height:0px
+}
+
+.Messange_container::-webkit-scrollbar-track {
+    background-color:#ecedee
+}
+
+.Messange_container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:rgb(97, 133, 240);
+}
+
+.Messange_container::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(97, 133, 240);
+}
+
+.Messange_container::-webkit-resizer{
+    background-repeat:no-repeat;
+    width:0px;
+    height:0px
+}
+
+.Messange_container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.addChannel{
+    width: 44px;
+    height: 44px;
+    background-image: url('../secret_img/add_channel.png');
+    background-size: 100%;
+    align-self: center;
+    cursor: pointer;
+}
+
+@media(max-width:1100px){
+    .MessageContainer > div{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.SearchUsers input[type='submit']{
+    margin:0;
+}
+
+.UsersContainer{
+    margin-bottom: 20px;
+}
+
+.UserRowSearch{
+    height: 35px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.UserRowSearch > *{
+    width: 100%;
+    height: 100%;
+}
+
+.UserRowSearch > img{
+    width: 35px;
+    height: 35px;
+}

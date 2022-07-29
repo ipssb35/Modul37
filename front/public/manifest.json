@@ -1,0 +1,8 @@
+{
+  "short_name": "Messanger ChatRUS",
+  "name": "Messanger for ",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "red",
+  "background_color": "blue"
+}
